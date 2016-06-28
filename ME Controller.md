@@ -18,7 +18,7 @@ Callbacks:
 * `getCraftables([filter:table]):table`  
   Get a list of known item recipes. These can be used to issue crafting requests.  
   **filter** - Table with key, value pairs that matches the item stack you want to search for.  
-  **Returns:** Table of craftables, see [Craftable](#craftable). 
+  **Returns:** Table of Craftables, see [Craftable](#craftable). 
 * `getEnergyStored():number`  
   Returns the total amount of stored energy.
 * `getEssentiaInNetwork():table`  
@@ -55,6 +55,14 @@ Callbacks:
   Returns the item stack representation of the crafting result.
 * `request([amount:int[, prioritizePower:boolean[, cpuName:string]]]):userdata`  
   Requests the item to be crafted, returning an object that allows tracking the crafting status.
+  **Returns:** [CraftingStatus](#craftingstatus)
+
+## CraftingStatus
+
+* `isCanceled():boolean`  
+  Get whether the crafting request has been canceled.
+* `isDone():boolean`  
+  Get whether the crafting request is done.
 
 [Inventory Controller]: http://ocdoc.cil.li/component:inventory_controller
 [Database]: http://ocdoc.cil.li/component:database
