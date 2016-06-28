@@ -19,8 +19,6 @@ Callbacks:
   Get a list of known item recipes. These can be used to issue crafting requests.  
   **filter** - Table with key, value pairs that matches the item stack you want to search for.  
   **Returns:** Table of Craftables, see [Craftable](#craftable). 
-* `getEnergyStored():number`  
-  Returns the total amount of stored energy.
 * `getEssentiaInNetwork():table`  
   Get a list of the stored essentia in the network.
 * `getFluidsInNetwork():table`  
@@ -33,16 +31,10 @@ Callbacks:
   Get a list of the stored items in the network.  
   **filter** - Table with key, value pairs that matches the item stack you want to search for.  
   **Returns:** Table of item stacks, see [Inventory Controller] for a list of properties
-* `getMaxEnergyStored():number`  
-  Returns the maximum amount of stored energy.
 * `getMaxStoredPower():number`  
   Get the maximum stored power in the network.
 * `getStoredPower():number`  
-  Get the stored power in the network. 
-* `isEnergyProvider():number`  
-  Returns whether this component can provide energy.
-* `isEnergyReceiver():number`  
-  Returns whether this component can receive energy.
+  Get the stored power in the network.
 * `store(filter:table, dbAddress:string[, startSlot:number[, count:number]]): Boolean`  
   Store items in the network matching the specified filter in the database with the specified address.
   See [Database] for more information on databases.
