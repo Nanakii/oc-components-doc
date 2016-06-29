@@ -46,7 +46,7 @@ Callbacks:
 * `getItemStack():table`  
   Returns the item stack representation of the crafting result.
 * `request([amount:int[, prioritizePower:boolean[, cpuName:string]]]):userdata`  
-  Requests the item to be crafted, returning an object that allows tracking the crafting status.
+  Requests the item to be crafted, returning an object that allows tracking the crafting status.  
   **Returns:** [CraftingStatus](#craftingstatus)
 
 ## CraftingStatus

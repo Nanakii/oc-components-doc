@@ -10,7 +10,7 @@ Callbacks:
   **slot** - [Slot](#slots) number  
   **Returns:** Item stack, see [Inventory Controller] for a list of properties
 * `setExportConfiguration(side:number[, slot:number][, database:address, entry:number]):boolean`  
-  Configure the export bus pointing in the specified direction to export item stacks matching the specified descriptor.
+  Configure the export bus pointing in the specified direction to export item stacks matching the specified descriptor.  
   **side** - [Sides] value  
   **slot** - [Slot](#slots) number  
   **database** - [Database] address  
