@@ -51,6 +51,8 @@ Callbacks:
 
 ## CraftingStatus
 
+Callbacks:
+
 * `isCanceled():boolean`  
   Get whether the crafting request has been canceled.
 * `isDone():boolean`  
